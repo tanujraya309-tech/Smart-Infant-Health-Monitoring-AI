@@ -1,2 +1,16 @@
-# Smart-Infant-Health-Monitoring-AI
-This project focuses on building an intelligent baby health monitoring system that can analyze infant cry sounds and predict basic baby needs such as hunger, discomfort, or sleep. The system combines artificial intelligence, signal processing, and a user-friendly dashboard to assist parents and caregivers.
+# Smart Infant Health Monitoring System using AI
+
+## Project Description
+This project uses Artificial Intelligence to analyze infant cry sounds and predict possible baby conditions such as hunger, pain, or sleepiness.
+
+## Features
+- Baby cry classification
+- Audio signal processing
+- Real-time prediction dashboard
+- Alert system (future scope)
+
+## Tech Stac- Librosa
+- Streamlit
+
+C## Status
+Project under development 🚧
