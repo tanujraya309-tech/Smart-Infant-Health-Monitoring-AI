@@ -44,3 +44,10 @@ print(classification_report(y_test, y_pred))
 
 print("Model saved successfully")
 
+import joblib
+
+joblib.dump(model, "model.pkl")
+joblib.dump(scaler, "scaler.pkl")
+
+print("Model and scaler saved")
+

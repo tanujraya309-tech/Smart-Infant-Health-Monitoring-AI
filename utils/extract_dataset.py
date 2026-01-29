@@ -14,7 +14,7 @@ labels = [
     "hungry",
     "lonely",
     "scared",
-    "tired"
+    "tired","non_cry"
 ]
 
 # Auto label mapping
