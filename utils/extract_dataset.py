@@ -9,7 +9,6 @@ DATA_PATH = "data/cry_audio"
 labels = [
     "belly_pain",
     "burping",
-    "cold_hot",
     "discomfort",
     "hungry",
     "lonely",
@@ -74,7 +73,7 @@ np.save("data/y_labels.npy", y)
 np.save("data/label_map.npy", label_map)
 
 
-print("\n✅ DATASET EXTRACTION COMPLETED")
+print(" DATASET EXTRACTION COMPLETED")
 print("Total samples:", X.shape[0])
 print("Feature size:", X.shape[1])
 print("Total classes:", len(labels))
