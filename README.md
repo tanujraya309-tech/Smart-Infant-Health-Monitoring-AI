@@ -13,4 +13,5 @@ This project uses Artificial Intelligence to analyze infant cry sounds and predi
 - Streamlit
 
 C## Status
-Project under development 🚧
+Project under development,using various model for the best training purpose and also for the best results
+🚧
