@@ -9,7 +9,7 @@ DATA_PATH = "data/cry_audio"
 labels = [
     "belly_pain",
     "burping",
-    "old_hot",
+    "cold_hot",
     "discomfort",
     "hungry",
     "lonely",
