@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import joblib
 
-# Load dataset
+# Load dataset which is in the data folder 
 X = np.load("data/X_features.npy")
 y = np.load("data/y_labels.npy")
 
