@@ -6,7 +6,7 @@ This project uses Artificial Intelligence to analyze infant cry sounds and predi
 ## Features
 - Baby cry classification
 - Audio signal processing
-- Real-time prediction dashboard
+- Real-time prediction 
 - Alert system (future scope)
 
 ## Tech Stac- Librosa
