@@ -24,9 +24,24 @@ y = []
 
 
 def extract_features(file_path):
-    audio, sr = librosa.load(file_path, sr=None)
-    mfcc = librosa.feature.mfcc(y=audio, sr=sr, n_mfcc=40)
-    features = np.mean(mfcc.T, axis=0)
+    y, sr = librosa.load(file_path, sr=None)
+
+    mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
+    delta = librosa.feature.delta(mfcc)
+    delta2 = librosa.feature.delta(mfcc, order=2)
+
+    chroma = librosa.feature.chroma_stft(y=y, sr=sr)
+    zcr = librosa.feature.zero_crossing_rate(y)
+    spec_centroid = librosa.feature.spectral_centroid(y=y, sr=sr)
+
+    features = np.concatenate([
+        np.mean(mfcc, axis=1),
+        np.mean(delta, axis=1),
+        np.mean(delta2, axis=1),
+        np.mean(chroma, axis=1),
+        np.mean(zcr, axis=1),
+        np.mean(spec_centroid, axis=1)
+    ])
     return features
 
 
